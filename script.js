@@ -102,15 +102,24 @@ try {
 
 
 }
-let stringToParse = "12; 34; 45; 2.3; 12; 13,4; pippo;";
-
-const stringToParsed = new ParseStringToArrayofNumber(stringToParse);
-
-console.log(stringToParsed.sliceSemicolon());
-
 // console.log(parseStringToNumber("2"));
 // console.log(parseStringToNumber("2.1"));
 // console.log(parseStringToNumber("2,1"));
 // console.log(parseStringToNumber("2pippo"));
 // console.log(parseStringToNumber("pippo"));
 // console.log(parseStringToNumber("pippo2"));
+
+
+
+let stringToParse = "12; 34; 45; 2.3; 12; 13,4; pippo;";
+
+// let stringToParsed = new ParseStringToArrayofNumber(stringToParse);
+let string1 = "12; 13; 45; 23\n; 2.1; 13; 34; 21\n; 3.2; 12; 4; 22\n";
+// let string1ToParsed = new ParseStringToArrayofNumber(string1);
+// console.log(string1ToParsed);
+console.log(string1);
+let array1 = Parse.parseCSVLine(string1);
+
+console.log(array1);
+
+
